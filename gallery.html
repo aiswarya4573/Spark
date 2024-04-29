@@ -49,6 +49,11 @@
             top:0px;
 
         }
+        .baby{
+            position: absolute;
+            left: 230px;
+            top:0px;
+        }
         .sea{
             position: relative;
             top:20px;
@@ -61,7 +66,7 @@
         }
         body{
             background-color: lemonchiffon;
-            min-height: 100%;
+            
         }
         @media(min-width:319px) and (max-width:480px){
       body{
@@ -103,6 +108,8 @@
      .forgot{
         position: absolute;
         padding-top: 80px;
+        left: 100px;
+        top:120px;
 
      }
      .btn{
@@ -120,6 +127,7 @@
     </style>
 </head>
 <body>
+<div class="ourbody">
     <h1>Gallery</h1>
     <button class="button1" type="">Login
         <a href="login.html"></a>
@@ -145,7 +153,6 @@
                         
                     </div>
                     <div class="forgot">
-                        <label ><input type="checkbox">Remmember Me</label>
                         <a href="#">Forgot password?</a>
                     </div>
                     <button class="btn" type="submit">Login</button>
@@ -166,7 +173,10 @@
            <div class="clock">
              <img src="clock.jpg"/>
                <div class="wall">
-                 <img src="wall.jpg"/>
+                 <img src="wall.jpg" style="position: relative;"/>
+                   <div class="baby">
+                     <img src="baby-5925559_640.jpg" width="200" height="200" style="position: absolute;"/>
+                 </div>
                 </div>
             </div>
        </div>
@@ -177,21 +187,22 @@
 
 
 
-        <div class="sea">
-            <img src="mannearsea.jpg"/> 
+ <div class="sea">
+    <img src="mannearsea.jpg"/> 
             
          
-           <div class="tea">
-                <img src="teacup.jpg"/>
-           </div>
-        </div>
+    <div class="tea">
+        <img src="teacup.jpg"/>
+    </div>
+ </div>
 
 
         
      
 
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     
+</div> 
 
 </body>
