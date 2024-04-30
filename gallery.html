@@ -91,7 +91,7 @@
      h2{
         position: absolute;
         left: 170px;
-        top:10px;
+        bottom: 100px;
      }
      .login{
         position: absolute;
@@ -104,7 +104,18 @@
         background: rgba(242, 204, 109, 0.918);
         border: 2px solid rgba(255,255,255,.5);
         z-index: 100;
-        left: 200px;
+        left: 460px;
+     }
+     #pass{
+        left: 50px;
+        bottom: 5px;
+     }
+     #maill{
+        left: 50px;
+        
+        bottom: 40px;
+
+
      }
      .emailbox{
         position: relative;
@@ -114,14 +125,22 @@
         position: absolute;
         padding-top: 80px;
         left: 100px;
-        top:120px;
+        top:30px;
 
      }
+     .register{
+        position: absolute;
+        left: 100px;
+        top: 70px;
+     }
      .btn{
+        position: absolute;
         margin-left: 90px;
         margin-top: 17px;
         width: 90px;
         height: 28px;
+        top: 20px;
+        right: 150px;
      }
      .width{
         width: 700px;
@@ -142,16 +161,16 @@
  <div class="width">
      <div class="image-row">
           <div class="login">
-              <div class="box-login">
+              <div class="box-login" style="position: relative;">
                   <h2>Login</h2>
                   <form action="#">
-                      <div class="input-box">
+                      <div class="input-box" id="maill" style="position: absolute;">
                         <label>Email</label>
                         <input type="email" required class="emailbox">
                         <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
                         
                     </div>
-                    <div class="input-box">
+                    <div class="input-box" id="pass"style="position: absolute;">
                         <label>Password</label>
                         <input type="password" required>
                         <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
