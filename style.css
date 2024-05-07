@@ -8,6 +8,7 @@ h1{
 }
 html{
     background-color:lemonchiffon;
+    height: 100%;
     
 }
 .content{
@@ -47,9 +48,44 @@ h2{
 
 }
 .container{
+    position: relative;
     display: flex;
     gap:10px;
     background-color: rgb(248, 235, 163);
     padding: 10px;
 
 }
+.button1{
+    position: absolute;
+    background-color: transparent;
+    border-color: rgba(165, 42, 42, 0.555);
+    border-radius: 6px;
+    right: 140px;
+
+    
+}
+.button1:hover{
+    opacity: 0.8;
+    background:rgb(252, 248, 190);
+    color:black; 
+}
+.button2{
+    position: absolute;
+    background-color: transparent;
+    border-color: rgba(165, 42, 42, 0.555);
+    border-radius: 6px;
+    margin-right: 10px;
+    right:60px;
+    
+
+}
+.button2:hover{
+    opacity: 0.8;
+    background:rgb(252, 248, 190);
+    color:black; 
+}
+
+.content {
+    height: 444px;
+    width: 1333px;
+  }
