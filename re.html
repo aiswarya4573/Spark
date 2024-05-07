@@ -1,37 +1,123 @@
-<div class="register">
-<span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
-            <div class="regbox-login" style="position: relative;">
-                <h2>Register</h2>
-                <form action="#">
-                <div class="input-box" id="usr" style="position: absolute;">
-                    <label>Username</label>
-                    <input type="text" required class="usrbox">
-                    <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
-                </div>
-                <div class="input-box" id="maill" style="position: absolute;">
-                    <label>Email</label>
-                        <input type="email" required class="emailbox">
-                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                                 
-                    </div>
-                    <div class="input-box" id="pass"style="position: absolute;">
-                        <label>Password</label>
-                        <input type="password" required>
-                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                                 
-                    </div>
-                    <div class="forgot">
-                        <a href="#" id="frgt">Forgot password?</a>
-                    </div>
-                <button class="btn" type="submit">Register</button>
-             </form>
-                       
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <style>
+              html{
+    background-color:lemonchiffon;
+    height: 100%;
+     }
+     .register{
+        text-align: center;
+        color: black;
+        border-radius: 20px;
+        align-content: center;
+        text-align: center;
+        width: 400px;
+        height: 410px;
+        background: rgba(252, 217, 142, 0.466);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 30px rgba(0,0,0,0.5);
+        border: 2px solid rgba(255,255,255,.5);
+        z-index: 100;
+        left: 460px;
         
-                            
-            </div>
+}
+.box-login{
+  text-align: center;
+  
+}
+#pass{
+        left: 50px;
+        bottom: 5px;
+     }
+     #maill{
+        left: 50px;
+        
+        bottom: 40px;
+
+
+     }
+     .emailbox{
+        position: relative;
+        margin-left: 23px;
+     }
+     .forgot{
+        color: white;
+        position: absolute;
+        padding-top: 80px;
+        left: 100px;
+        top:30px;
+     }
+
+
+        </style>
+    </head>
+    <body>
+        <div style="position: relative;">
+            <div class="register" style="position: absolute;">
+                <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+                            <div class="regbox-login" style="position: absolute;">
+                                <h2>Register</h2>
+                                <form action="#">
+                                <div class="input-box" id="usr" style="position: absolute;">
+                                    <label>Username</label>
+                                    <input type="text" required class="usrbox">
+                                    <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                                </div>
+                                <div class="input-box" id="maill" style="position: absolute;">
+                                    <label>Email</label>
+                                        <input type="email" required class="emailbox">
+                                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                                                 
+                                    </div>
+                                    <div class="input-box" id="pass"style="position: absolute;">
+                                        <label>Password</label>
+                                        <input type="password" required>
+                                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                                                 
+                                    </div>
+                                    <div class="forgot">
+                                        <a href="#" id="frgt">Forgot password?</a>
+                                    </div>
+                                <button class="btn" type="submit">Register</button>
+                             </form>
+                                       
+                
+                        
+                                            
+                            </div>
+                
+                        </div>
+                        
+                    </div>
+                </div>
 
         </div>
-        
-    </div>
-</div>
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
