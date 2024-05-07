@@ -1,3 +1,1 @@
-function show(){
-    document.getElementsByClassName('login').style.display="block";
-}
+document.querySelector("button").setAttribute("href","login.html");
