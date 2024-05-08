@@ -70,36 +70,52 @@
         background:rgb(250, 247, 207);
         color:black;
      }
+     .close{
+        position: absolute;
+        cursor: pointer;
+        font-size: larger;
+        right: 20px;
+        top: 12px;
+        color: brown;
+     }
 
         </style>
     </head>
     <body>
-        <div class="change" style="position: relative;">
-            <h2 style="position: absolute;">Change password</h2>
-            <form action="#">
+      <div style="position: relative;">
+        <div class="change" style="position: absolute;">
+          <div class="box-change">
+             <a href="#"class ="close" onclick="window.open('index.html')"><ion-icon name="close-outline"></ion-icon></a>
+             <h2 style="position: absolute;">Change password</h2>
+             <form action="#">
                 <div class="input-box" id="maill" >
-                  <label>Email</label>
-                  <input type="email" required class="emailbox">
-                  <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                  
-              </div>
+                   <label>Email</label>
+                   <input type="email" required class="emailbox">
+                   
+                </div>
               <div class="input-box" id="pass"style=>
                  <label> Old Password</label>
                  <input type="password" required class="opbox">
-                 <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                
                 
               </div>
             <div class="input-box" id="npass">
                 <label>New Password</label>
                 <input type="password" required class="npbox">
-                <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                
                 
             </div>
             <button class="btn" type="submit">Save</button>
             </form>
-        </div>
-        
+         </div>
+      
+       </div>
+      </div>
+      
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+       
     
 
-    </body>
+   </body>
 </html>
