@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <style>
-              html{
+<head>
+    <style>
+        html{
     background-color:lemonchiffon;
     height: 100%;
      }
-     .register{
+     h2{
+        top: 10px;
+        left: 180px;
+     }
+     .login{
         text-align: center;
         color: black;
         border-radius: 20px;
@@ -26,73 +30,107 @@
   text-align: center;
   
 }
-#pass{
-        left: 50px;
-        bottom: 5px;
-     }
-     #maill{
-        left: 50px;
+#user{
+    position: absolute;
+        margin-left: 80px;
+        top: 90px;
+}
+.userbox{
+    position: relative;
+    margin-left: 3px;
+}
+#maill{
+        position: absolute;
+        margin-left: 80px;
+        top: 120px;
         
-        bottom: 40px;
 
 
      }
+#pass{
+        position: absolute;
+        margin-left:80px;
+        top: 150px;
+     }
+     .passbox{
+        position: relative;
+        margin-left: 6px;
+     }
+     
+     
      .emailbox{
         position: relative;
-        margin-left: 23px;
+        margin-left: 29px;
      }
      .forgot{
         color: white;
         position: absolute;
         padding-top: 80px;
         left: 100px;
-        top:30px;
+        top:150px;
      }
+     a{
+        color: brown;
+     }
+     .btn{
+        position: absolute;
+        margin-left: 90px;
+        margin-top: 17px;
+        width: 90px;
+        height: 28px;
+        bottom: 180px;
+        right: 150px;
+     }
+     .register{
+        position: absolute;
+        left: 100px;
+        top:240px;
+
+     }
+       
+
 
 
         </style>
     </head>
     <body>
         <div style="position: relative;">
-            <div class="register" style="position: absolute;">
-                <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
-                            <div class="regbox-login" style="position: absolute;">
-                                <h2>Register</h2>
-                                <form action="#">
-                                <div class="input-box" id="usr" style="position: absolute;">
-                                    <label>Username</label>
-                                    <input type="text" required class="usrbox">
-                                    <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
-                                </div>
-                                <div class="input-box" id="maill" style="position: absolute;">
-                                    <label>Email</label>
-                                        <input type="email" required class="emailbox">
-                                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                                                 
-                                    </div>
-                                    <div class="input-box" id="pass"style="position: absolute;">
-                                        <label>Password</label>
-                                        <input type="password" required>
-                                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                                                 
-                                    </div>
-                                    <div class="forgot">
-                                        <a href="#" id="frgt">Forgot password?</a>
-                                    </div>
-                                <button class="btn" type="submit">Register</button>
-                             </form>
-                                       
+            <div class="login" style="position: absolute;">
                 
-                        
-                                            
-                            </div>
-                
+                <div class="box-login">
+                    <h2 style="position: absolute;">Register</h2>
+                    <form action="#">
+                        <div class="input-box" id="user" style="position: absolute;">
+                            <label>Username</label>
+                            <input type="email" required class="userbox">
+                            <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                            
                         </div>
-                        
-                    </div>
+                        <div class="input-box" id="maill" style="position: absolute;">
+                          <label>Email</label>
+                          <input type="email" required class="emailbox">
+                          <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                          
+                      </div>
+                      <div class="input-box" id="pass"style="position: absolute;">
+                          <label>Password</label>
+                          <input type="password" required class="passbox">
+                          <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                          
+                      </div>
+                      
+                      <button class="btn" type="submit">Save</button>
+            
+                      
+                      
+                   </form>
                 </div>
-
+            </div>
+        
         </div>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 
 </html>

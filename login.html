@@ -6,6 +6,10 @@
     background-color:lemonchiffon;
     height: 100%;
      }
+     h2{
+        top: 10px;
+        left: 180px;
+     }
      .login{
         text-align: center;
         color: black;
@@ -26,17 +30,20 @@
   text-align: center;
   
 }
-#pass{
-        left: 50px;
-        bottom: 5px;
-     }
-     #maill{
-        left: 50px;
+#maill{
+        position: absolute;
+        margin-left: 80px;
+        top: 90px;
         
-        bottom: 40px;
 
 
      }
+#pass{
+        position: absolute;
+        margin-left:80px;
+        top: 120px;
+     }
+     
      .emailbox{
         position: relative;
         margin-left: 23px;
@@ -46,7 +53,26 @@
         position: absolute;
         padding-top: 80px;
         left: 100px;
-        top:30px;
+        top:150px;
+     }
+     
+     a{
+        color: brown;
+     }
+     .btn{
+        position: absolute;
+        margin-left: 90px;
+        margin-top: 17px;
+        width: 90px;
+        height: 28px;
+        bottom: 210px;
+        right: 150px;
+     }
+     .register{
+        position: absolute;
+        left: 100px;
+        top:240px;
+
      }
 
 
@@ -58,12 +84,12 @@
     <header>
 
     </header>
-</body>
+
 <div style="position: relative;">
     <div class="login" style="position: absolute;">
-        <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+        
         <div class="box-login">
-            <h2>Login</h2>
+            <h2 style="position: absolute;">Login</h2>
             <form action="#">
                 <div class="input-box" id="maill" style="position: absolute;">
                   <label>Email</label>
@@ -78,20 +104,24 @@
                   
               </div>
               <div class="forgot">
-                  <a href="#" id="frgt">Forgot password?</a>
+                  <a href="#" id="frgt" onclick="window.open('enter.html')">Forgot password?</a>
               </div>
               <button class="btn" type="submit">Login</button>
     
               
               <div class="register">
                   <p>Dont have an account?
-                     <a href="#" class="register-link">Register</a></p>
+                     <a href="#" class="register-link" onclick="window.open('re.html')" >Register</a></p>
               </div>
            </form>
         </div>
     </div>
 
 </div>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
 <footer>
 
 </footer>

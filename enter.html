@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <style>
+               html{
+    background-color:lemonchiffon;
+    height: 100%;
+     }
+     h2{
+        top: 10px;
+        left: 110px;
+     }
+     .change {
+        position: relative;
+        text-align: center;
+        color: black;
+        border-radius: 20px;
+        align-content: center;
+        text-align: center;
+        width: 400px;
+        height: 410px;
+        background: rgba(252, 217, 142, 0.466);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 30px rgba(0,0,0,0.5);
+        border: 2px solid rgba(255,255,255,.5);
+        z-index: 100;
+        left: 460px;
+        
+}
+
+.box-login{
+  text-align: center;
+  
+}
+
+     #maill{
+        position: absolute;
+        margin-left: 80px;
+        top: 90px;
+        
+     }
+     #pass{
+        position: absolute;
+        margin-left:25px;
+        top: 120px;
+     }
+     #npass{
+        position: absolute;
+        margin-left: 18px;
+        top:150px;
+     }
+
+     .emailbox{
+        position: absolute;
+        margin-left: px;
+     }
+     .btn{
+        position: absolute;
+        margin-left: 90px;
+        margin-top: 17px;
+        width: 90px;
+        height: 28px;
+        bottom: 130px;
+        right: 150px;
+     }
+
+        </style>
+    </head>
+    <body>
+        <div class="change" style="position: relative;">
+            <h2 style="position: absolute;">Change password</h2>
+            <form action="#">
+                <div class="input-box" id="maill" >
+                  <label>Email</label>
+                  <input type="email" required class="emailbox">
+                  <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                  
+              </div>
+              <div class="input-box" id="pass"style=>
+                 <label> Old Password</label>
+                 <input type="password" required class="opbox">
+                 <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                
+              </div>
+            <div class="input-box" id="npass">
+                <label>New Password</label>
+                <input type="password" required class="npbox">
+                <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                
+            </div>
+            <button class="btn" type="submit">Save</button>
+            </form>
+        </div>
+        
+    
+
+    </body>
+</html>
